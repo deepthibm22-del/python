@@ -1,0 +1,194 @@
+PROGRAM 1: Print numbers from 1 to 10
+Question
+Write a Python program using a while loop to print numbers from 1 to 10.
+My Answer
+i = 1while i <= 10:    print(i)    i = i + 1
+
+
+
+Output
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+
+Explanation
+1. Initially, i = 1.
+2. The while loop checks whether i <= 10.
+3. If the condition is True, it prints i.
+4. i = i + 1 increases the value by 1.
+5. When i becomes 11, the condition becomes False and the loop stops.
+Completed
+
+PROGRAM 2: Sum of Natural Numbers
+Question
+Write a Python program to take a number from the user and calculate the sum of all natural numbers from 1 up to that number.
+
+Example: Input = 5
+
+Calculation: 1 + 2 + 3 + 4 + 5 = 15
+My Answer
+num = int(input("enter the num:"))i = 1sum = 0while i <= num:    sum = sum + i    i = i + 1print("sum=", sum)
+
+
+
+Output
+enter the num: 5
+sum= 15
+
+
+Explanation
+1. num stores the input number.
+2. i = 1 initializes the counter.
+3. sum = 0 initializes the total.
+4. sum = sum + i adds the current number to the previous total.
+5. i = i + 1 increases the counter.
+6. After the loop finishes, the final sum is printed.
+Questions and My Answers
+Q1. For input 5, what is the final sum?
+
+Answer: 15.
+
+Q2. Should the final print statement be inside or outside the loop?
+
+Answer: Outside the loop.
+
+Q3. Which variable should be printed at the end, i or sum?
+
+Answer: sum.
+Completed
+
+PROGRAM 3: Multiplication Table
+Question
+Write a Python program to take a number from the user and print its multiplication table from 1 to 10.
+
+Example: Input = 5
+My Answer
+num = int(input("enter the num:"))i = 1product = 1while i <= 10:    product = num * i    print(f'{num}*{i}={product}')    i = i + 1
+
+
+
+Output
+5*1=5
+5*2=10
+5*3=15
+5*4=20
+5*5=25
+5*6=30
+5*7=35
+5*8=40
+5*9=45
+5*10=50
+
+
+Explanation
+1. num stores the input number.
+2. i = 1 initializes the counter.
+3. while i <= 10 repeats the loop ten times.
+4. product = num * i calculates multiplication.
+5. print() displays each multiplication result.
+6. i = i + 1 increases the counter.
+Questions and My Answers
+Q1. If the user enters 5, should the loop run up to 5 or 10?
+
+Answer: 10.
+
+Q2. Should print() be inside or outside the while loop?
+
+Answer: Inside the loop.
+
+Q3. Why did printing after the loop show 5*11=50?
+
+Answer: Because after the tenth iteration, i becomes 11 before the loop stops.
+Completed
+
+PROGRAM 4: Count the Digits in a Number
+Question
+Write a Python program to take a number from the user and count how many digits it contains.
+
+Example:
+
+Input = 4582
+
+Output = 4
+My Final Answer
+num = int(input("enter the num:"))count = 0while num > 0:    num = num // 10    count += 1print("count is=", count)
+
+
+
+Output
+enter the num: 4582
+count is= 4
+
+
+Explanation
+1. num stores the input number.
+2. count = 0 initializes the digit counter.
+3. while num > 0 checks whether the number is greater than zero.
+4. num = num // 10 removes the last digit.
+5. count += 1 increases the digit count by one.
+6. When num becomes 0, the condition becomes False and the loop stops.
+7. Finally, the count is printed.
+Dry Run
+Input: 4582
+Iteration	Number after // 10	Count
+1	458	1
+2	45	2
+3	4	3
+4	0	4
+
+Questions and My Answers
+Q1. Which operator removes the last digit when used with 10?
+
+Answer: // (Floor Division).
+
+Q2. What is 4582 // 10?
+
+Answer: 458.
+
+Q3. What is 458 // 10?
+
+Answer: 45.
+
+Q4. If the input is 729, how many times will the while loop execute?
+
+Answer: 3 times.
+
+Q5. When num becomes 0, what happens to while num > 0?
+
+Answer: The condition becomes False, so the loop stops.
+Completed
+
+IMPORTANT CONCEPTS LEARNED
+Concept	Meaning
+while condition:	Repeats while the condition is True
+i = i + 1	Increases i by 1
+count += 1	Increases count by 1
+sum = sum + i	Adds the current value to the previous total
+num // 10	Removes the last digit mathematically
+num = num // 10	Removes the last digit and updates num
+num > 0	Checks whether num is greater than zero
+
+Important Difference: // and /
+- / performs normal division.
+- // performs floor division.
+Example:
+4582 / 10   # 458.24582 // 10  # 458
+
+
+
+
+MY NEXT PRACTICE PROGRAM
+PROGRAM 5: Reverse a Number
+Question: Write a Python program that takes a number from the user and prints it in reverse order.
+
+Example:
+Input: 1234
+Output: 4321

@@ -1,0 +1,66 @@
+1. Python – Number-Based Programs
+Program 1: Reverse a Number
+num = int(input("Enter a number: "))
+rev = 0while num > 0:   
+ digit = num % 10    
+rev = rev * 10 + digit   
+ num = num // 10
+print("Reverse is:", rev)
+
+
+
+Example: 1234 → 4321
+
+Program 2: Count the Digits
+num = int(input("Enter a number: "))
+count = 0if num == 0:    
+count = 1else:   
+ while num > 0:        
+count = count + 1        
+num = num // 10
+print("Number of digits:", count)
+
+
+
+Example: 458 → 3
+
+Program 3: Sum of Digits
+num = int(input("Enter a number: "))
+total = 0while num > 0:   
+ digit = num % 10    
+total = total + digit    
+num = num // 10print
+("Sum of digits:", total)
+
+
+
+Example: 458 → 17
+
+Program 4: Palindrome Number
+num = int(input("Enter a number: "))
+original = num
+rev = 0
+while num > 0:    
+digit = num % 10    
+rev = rev * 10 + digit    
+num = num // 10
+if original == rev:    
+print("Palindrome")else:    
+print("Not a palindrome")
+
+
+
+Example: 121 → Palindrome
+
+Program 5: Product of Digits
+num = int(input("Enter a number: "))
+product = 1if num == 0:    
+product = 0else:    
+while num > 0:        
+digit = num % 10       
+ product = product * digit        
+num = num // 10print("Product of digits:", product)
+
+
+
+Example: 234 → 24
