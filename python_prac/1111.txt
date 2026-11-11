@@ -1,0 +1,58 @@
+ 1 – Reverse a number
+num = int(input("Enter the number:"))
+rev = 0
+while num > 0:    
+	digit = num % 10    
+	rev = rev * 10 + digit    
+	num = num // 10
+print("Reverse:", rev)
+
+
+
+ 2 – Palindrome number
+num = int(input("Enter the number:"))
+org = num
+rev = 0
+while num > 0:    
+   	digit = num % 10    
+	rev = rev * 10 + digit   
+	num = num // 10
+	if org == rev:    
+		print(org, "is a palindrome")
+	else:   
+		 print(org, "is not a palindrome")
+
+
+
+File 3 – Count even and odd digits
+num = int(input("Enter the number:"))
+even = 0
+odd = 0
+while num > 0:    
+	digit = num % 10    
+	if digit % 2 == 0:        
+		even += 1    
+	else:        
+		odd += 1   
+	num = num // 10
+print("Even digits:", even)
+print("Odd digits:", odd)
+
+
+
+4 – Sum of even and odd digits
+num = int(input("Enter the number:"))
+even_sum = 0
+odd_sum = 0
+while num > 0:    
+	digit = num % 10    
+	if digit % 2 == 0:        
+		even_sum += digit    
+	else:        
+		odd_sum += digit   
+	 num = num // 10
+print("Sum of even digits:", even_sum)
+print("Sum of odd digits:", odd_sum)
+
+
+
