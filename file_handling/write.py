@@ -15,7 +15,7 @@ f.write('have a great day\n')
 f.close()'''
 
 #read
-try:
+'''try:
     f=open('file1.txt','r')
     #data=f.readline()#one line or reads line by line
     #data=f.read()#complete file it will read
@@ -23,6 +23,9 @@ try:
 except:
     print('file is not present')
 else:
-    print(data)
+    print(data)'''
+
+#
+
     
               

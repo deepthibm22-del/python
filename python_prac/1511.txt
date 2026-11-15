@@ -1,0 +1,63 @@
+1. Handle ZeroDivisionError
+01_zero_division.py
+try:    
+    	a = 10    
+	b = 0   
+	 print(a / b)
+except ZeroDivisionError:    
+	print("Cannot divide by zero")
+
+
+
+2. Handle ValueError
+02_value_error.py
+try:    
+	num = int(input("Enter a number:"))    
+	print("Number:", num)
+except ValueError:    
+	print("Please enter a valid integer")
+
+
+
+3. Specific Except Block
+03_specific_except.py
+try:    
+	num = int(input("Enter a number:"))    
+	result = 100 / num    
+	print(result)
+except ValueError:    
+	print("Invalid input")
+except ZeroDivisionError:    
+	print("Cannot divide by zero")
+
+
+
+4. Generic Except Block
+04_generic_except.py
+try:   
+	 a = 10    
+	b = 0    
+	print(a / b)
+except Exception:    
+	print("An error occurred")
+
+
+
+5. Bare Except Block
+05_bare_except.py
+try:    
+	num = int(input("Enter a number:"))    
+	print(num)
+except:    
+	print("Something went wrong")
+
+
+
+6. Raising an Exception
+06_raise_exception.py
+age = int(input("Enter your age:"))
+if age < 18:    
+	raise ValueError("Not eligible")
+	print("You are eligible")
+
+
