@@ -93,17 +93,17 @@ for i in ob:
 ['Jaggu', '7865432109', '13', '45']'''
 
 #context maanger
-'''import csv
+import csv
 f=open('exam.csv','a')
 ob=csv.writer(f)
 ob.writerow(['dinku',9988876655,14,87])
-f.close()'''
+f.close()
 
 
 #with keyword--->used to close and open the file
-'''with open('exam.csv','a')as f:
+with open('exam.csv','a')as f:
     ob=csv.writer(f)
-    ob.writerow(['chota bheem',9867453265,15,54])'''
+    ob.writerow(['chota bheem',9867453265,15,54])
 
 
 
