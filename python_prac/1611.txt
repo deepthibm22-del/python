@@ -1,0 +1,115 @@
+
+num = int(input("Enter the number: "))
+
+largest_num = 0
+second_largest_num = 0
+
+while num > 0:
+    digit = num % 10
+
+    if digit > largest_num:
+        second_largest_num = largest_num
+        largest_num = digit
+
+    elif digit > second_largest_num:
+        second_largest_num = digit
+
+    num = num // 10
+
+print("Largest digit is:", largest_num)
+print("Second largest digit is:", second_largest_num)
+
+1. Count digits greater than 5
+
+num = int(input("Enter the number: "))
+count = 0
+
+while num > 0:
+    digit = num % 10
+
+    if digit > 5:
+        count += 1
+
+    num = num // 10
+
+print("Count of digits greater than 5:", count)
+
+
+2. Sum of digits divisible by 3
+num = int(input("Enter the number: "))
+sum = 0
+
+while num > 0:
+    digit = num % 10
+
+    if digit % 3 == 0:
+        sum += digit
+
+    num = num // 10
+
+print("Sum of digits divisible by 3:", sum)
+
+
+3. Find the smallest digit
+num = int(input("Enter the number: "))
+
+first_digit = num
+
+while first_digit >= 10:
+    first_digit = first_digit // 10
+
+smallest_num = first_digit
+
+while num > 0:
+    digit = num % 10
+
+    if digit < smallest_num:
+        smallest_num = digit
+
+    num = num // 10
+
+print("Smallest digit is:", smallest_num)
+
+
+4. Difference between largest and smallest digits
+num = int(input("Enter the number: "))
+
+first_digit = num
+
+while first_digit >= 10:
+    first_digit = first_digit // 10
+
+smallest_num = first_digit
+largest_num = 0
+
+while num > 0:
+    digit = num % 10
+
+    if digit > largest_num:
+        largest_num = digit
+
+    if digit < smallest_num:
+        smallest_num = digit
+
+    num = num // 10
+
+difference = largest_num - smallest_num
+
+print("Largest digit is:", largest_num)
+print("Smallest digit is:", smallest_num)
+print("Difference is:", difference)
+
+5. Check whether a number contains 0
+num = int(input("Enter the number: "))
+
+while num > 0:
+    digit = num % 10
+
+    if digit == 0:
+        print("It includes 0")
+        break
+
+    num = num // 10
+
+else:
+    print("It does not include 0")
