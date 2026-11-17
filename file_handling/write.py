@@ -93,7 +93,7 @@ for i in ob:
 ['Jaggu', '7865432109', '13', '45']'''
 
 #context maanger
-import csv
+'''import csv
 f=open('exam.csv','a')
 ob=csv.writer(f)
 ob.writerow(['dinku',9988876655,14,87])
@@ -103,11 +103,53 @@ f.close()
 #with keyword--->used to close and open the file
 with open('exam.csv','a')as f:
     ob=csv.writer(f)
-    ob.writerow(['chota bheem',9867453265,15,54])
+    ob.writerow(['chota bheem',9867453265,15,54])'''
+
+#wb+
+
+'''f=open('file4.txt','wb+')
+f.write(b'i am learning python')
+f.seek(0)'''
+#rb+
+
+'''f=open('file4.txt','rb+')
+data=f.read()
+print()
+f.close()'''
+
+#ab+
+'''f=open('file4.txt','ab+')
+f.write(b'. it is a programing language')
+f.read()
+f.close()'''
+#
+'''f=open('file4.txt','rb+')
+data=f.read()
+print(data)
+f.close()'''
+
+#
+'''f=open('image1.png','rb+')
+data=f.read()
+f=open('image2.png','wb+')
+f.write(data)
+f.close()'''
 
 
-
-
+#pickle
+import pickle
+f=open('image1.png','rb+')
+img=f.read()
+c=pickle.dumps(img)
+print(img,c)
+f1=open('image2.png','wb+')
+f.write()
+pickle.loads(c)
+f.close()
+'''f1=open('image2.png','wb+')
+f1.read(c)
+f.close()
+f1.close()'''
 
 
 
