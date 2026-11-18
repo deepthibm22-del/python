@@ -1,0 +1,69 @@
+1. Count vowels in a string
+ch = input("Enter a string: ")
+count_vowels = 0
+i = 0
+while i < len(ch):   
+ if ch[i] in 'aeiou':        
+count_vowels += 1    
+i += 1
+print("Count of vowels:", count_vowels)
+
+
+
+2. Count consonants in a string
+ch = input("Enter a string: ")
+count_consonants = 0
+i = 0
+while i < len(ch):    
+if ch[i].isalpha() and ch[i] not in 'aeiou':       
+ count_consonants += 1   
+ i += 1
+print("Count of consonants:", count_consonants)
+
+
+
+3. Count uppercase and lowercase letters
+ch = input("Enter a string: ")
+upper_count = 0
+lower_count = 0
+i = 0
+while i < len(ch):    
+if ch[i].isupper():        
+upper_count += 1    
+elif ch[i].islower():       
+ lower_count += 1    
+i += 1
+print("Uppercase letters:", upper_count)
+print("Lowercase letters:", lower_count)
+
+
+
+4. Check whether a number contains digit 0
+num = int(input("Enter a number: "))
+temp = num
+found = False
+while temp > 0:    
+digit = temp % 10    
+if digit == 0:        
+found = True        
+break    
+temp = temp // 10
+if found:    
+print("It includes 0")
+else:    
+print("It does not include 0")
+
+
+
+5. Count the number of digits
+num = int(input("Enter a number: "))
+count = 0
+while num > 0:    
+digit = num % 10    
+count += 1    
+num = num // 10
+print("Number of digits:", count)
+
+
+
+
