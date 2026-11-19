@@ -1,0 +1,28 @@
+# Python String Practice – Day 1
+
+## Description
+This repository contains beginner-level Python string programs practised using while loops and conditional statements.
+
+## Concepts Covered
+- String traversal using while loop
+- Vowel and consonant counting
+- Uppercase and lowercase counting
+- Digit counting
+- Special character counting
+- Space counting
+- Alphabet counting
+- Reverse a string
+- Palindrome checking
+
+## String Methods Learned
+- `isupper()`
+- `islower()`
+- `isalpha()`
+- `isdigit()`
+- `isalnum()`
+
+## Learning Objective
+To improve logical thinking, string manipulation, loop execution and problem-solving skills using Python.
+
+**Language:** Python  
+**Level:** Beginner
