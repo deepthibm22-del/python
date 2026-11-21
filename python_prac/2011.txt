@@ -1,0 +1,107 @@
+
+# 1. Count Words in a String
+
+ch = input("Enter a sentence: ")
+count = 1
+i = 0
+
+while i < len(ch):
+    if ch[i] == " ":
+        count += 1
+    i += 1
+
+print("Number of words:", count)
+
+
+# 2. Count Spaces and Non-Space Characters
+
+ch = input("Enter a string: ")
+spaces = 0
+non_spaces = 0
+i = 0
+
+while i < len(ch):
+    if ch[i] == " ":
+        spaces += 1
+    else:
+        non_spaces += 1
+    i += 1
+
+print("Spaces:", spaces)
+print("Non-space characters:", non_spaces)
+
+
+# 3. Count Uppercase and Lowercase Letters
+
+ch = input("Enter a string: ")
+uppercase = 0
+lowercase = 0
+i = 0
+
+while i < len(ch):
+    if ch[i].isupper():
+        uppercase += 1
+    elif ch[i].islower():
+        lowercase += 1
+    i += 1
+
+print("Uppercase letters:", uppercase)
+print("Lowercase letters:", lowercase)
+
+
+# 4. Count Alphabets and Digits
+
+ch = input("Enter a string: ")
+alphabets = 0
+digits = 0
+i = 0
+
+while i < len(ch):
+    if ch[i].isalpha():
+        alphabets += 1
+    elif ch[i].isdigit():
+        digits += 1
+    i += 1
+
+print("Alphabets:", alphabets)
+print("Digits:", digits)
+
+
+# 5. Find the Second Largest Number in a List
+
+numbers = [10, 25, 8, 40, 15]
+largest = numbers[0]
+second = numbers[0]
+
+for num in numbers:
+    if num > largest:
+        second = largest
+        largest = num
+    elif num > second:
+        second = num
+
+print("Second largest:", second)
+
+
+# 6. Find the Sum of List Elements
+
+numbers = [10, 20, 30, 40, 50]
+total = 0
+
+for i in numbers:
+    total = total + i
+
+print("Sum of list:", total)
+
+
+# 7. Find the Average of List Elements
+
+numbers = [10, 20, 30, 40, 50]
+total = 0
+
+for i in numbers:
+    total = total + i
+
+average = total / len(numbers)
+
+print("Average of list:", average)
