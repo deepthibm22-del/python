@@ -51,14 +51,14 @@ sample(5)'''
 print(reverse('deepthi'))'''
 
 #------------revrse a number-------------
-def reverse(n,rev=0):
+'''def reverse(n,rev=0):
     if n<=0:
         return rev
     d=n%10
     rev=(rev*10)+d
     n=n//10
     return reverse(n,rev)
-print(reverse(1234))
+print(reverse(1234))'''
 
 
 

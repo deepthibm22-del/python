@@ -23,7 +23,8 @@ reverse()'''
     rev=''
     r=list(reversed(s))
     ''.join(r)
-    print(rev)'''
+    print(rev)
+reverse()'''
 
 #second type of function with args
 
@@ -91,14 +92,14 @@ print(remove_dup(eval(input("enter:"))))'''
 '''print(remove_dup([1,2,2,3,4,5,5,6,7,8,9]))'''
 
 #wap to find perfect number
-def perfect_num(n):
+'''def perfect_num(n):
     sum_factorial=0
     for i in range(1,n):
         if n%1==0:
             sum_factorial+=i
     return sum_factorial==n
     return True
-##print(perfect_num(6)
+##print(perfect_num(6)'''
 
 
 #wap to strong number
@@ -165,7 +166,7 @@ def prime_numbers():
             print(i)'''
 
 #wap to print the arm strong numbers between 1 to 1000
-def arm_strong(n):
+'''def arm_strong(n):
     temp=n
     sum=0
     l=len(str(n))
@@ -177,7 +178,7 @@ def arm_strong(n):
         return true
     return false
 
-def armstrong_numbers():
+def armstrong_numbers():'''
     
     
     
