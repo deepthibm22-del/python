@@ -1,0 +1,58 @@
+
+# 6. Find the largest element in a list
+
+data = [10, 45, 20, 80, 30]
+
+largest = data[0]
+
+for i in data:
+    if i > largest:
+        largest = i
+
+print("Largest:", largest)
+
+
+# 7. Find the sum of even numbers
+
+data = [10, 15, 20, 25, 30]
+total = 0
+
+for i in data:
+    if i % 2 == 0:
+        total += i
+
+print("Sum of even numbers:", total)
+
+
+# 8. Remove duplicate elements
+
+data = [10, 20, 10, 30, 20, 40]
+unique = []
+
+for i in data:
+    if i not in unique:
+        unique.append(i)
+
+print("Unique elements:", unique)
+
+
+# 9. Count odd numbers in a list
+
+data = [10, 15, 20, 25, 30, 35]
+count = 0
+
+for i in data:
+    if i % 2 != 0:
+        count += 1
+
+print("Odd count:", count)
+
+
+# 10. Find the second largest number
+
+data = [10, 50, 30, 80, 60]
+
+data = list(set(data))
+data.sort()
+
+print("Second largest:", data[-2])
