@@ -1,0 +1,47 @@
+
+# 11. Reverse a string
+
+str1 = "python"
+rev = ""
+
+for i in str1:
+    rev = i + rev
+
+print("Reverse:", rev)
+
+
+# 12. Count vowels in a string
+
+str1 = "programming"
+count = 0
+
+for i in str1:
+    if i in "aeiou":
+        count += 1
+
+print("Vowel count:", count)
+
+
+# 13. Count characters in a string without len()
+
+str1 = "javascript"
+count = 0
+
+for i in str1:
+    count += 1
+
+print("Total characters:", count)
+
+
+# 14. Check palindrome string
+
+str1 = "madam"
+rev = ""
+
+for i in str1:
+    rev = i + rev
+
+if str1 == rev:
+    print("Palindrome")
+else:
+    print("Not palindrome")
